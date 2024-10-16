@@ -1,0 +1,721 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 50px;
+}
+
+.menunav {
+  background-color: white;
+  height: 80px;
+}
+
+.samsunglogo {
+  margin: 0 50px 0 0 ;
+}
+
+.ultag li {
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+.ultag li:hover {
+  background-color: black;
+  color: white;
+}
+
+.ultag li:hover .nav-link {
+  color: white;
+}
+
+.icons {
+  color: black;
+  font-size: 23px;
+  font-weight: 500;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.explore {
+  margin-left: 180px;
+}
+
+.firsticon {
+  margin-left: 40px;
+}
+
+.firstads {
+  width: 100%;
+  height: 85%;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: 1s all ease-in-out;
+}
+
+.adsfirst {
+  width: 50%;
+  height: 100%;
+  color: black;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 70px;
+}
+
+.adsfirst h1 {
+  font-size: 55px;
+  margin-right: 60px;
+  font-weight: 700;
+  transition: all 2s ease;
+}
+
+.adsfirst p {
+  font-size: 19px;
+  transition: all 2s ease;
+}
+
+.adsfirst button {
+  width: auto;
+  padding: 9px 17px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-weight: 600;
+  transition: all 2s ease;
+}
+
+.firstads .skipbtn {
+  position: absolute;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(173, 173, 173);
+  color: white;
+}
+
+.firstads .pastbtn {
+  left: 20px;
+}
+
+.firstads .nextbtn {
+  right: 20px;
+}
+
+.firstads .alllines {
+  width: 70%;
+  position: absolute;
+  bottom: 60px;
+  left: 13%;
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+}
+
+.firstadsshopbtn a{
+  text-decoration: none;
+}
+
+.firstads .line {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20%;
+  margin-left: 5px;
+  border: none;
+  z-index: 56;
+  position: relative;
+  transition: 5s all ease-in-out;
+}
+
+.firstads .line span{
+  width: 0;
+  height: 2px;
+  border: none;
+  background-color: aqua;
+  z-index: 333;
+  position: absolute;
+  left: 0;
+  border: none;
+  transition: 5s all ease;
+}
+
+.seconddiv {
+  width: 100%;
+  height: 45%;
+  margin-top: 50px;
+  background-color: red;
+  padding: 50px 80px;
+  color: white;
+  background-image: url(https://images.samsung.com/is/image/samsung/assets/40821/HP_ThinkBanner_HeroKV_DT.jpg?$1440_N_JPG$);
+  background-position: center;
+  background-size: cover;
+}
+
+.seconddiv h1 {
+  width: 550px;
+  font-size: 45px;
+}
+
+.seconddiv p {
+  font-size: 18px;
+}
+
+.seconddiv button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: none;
+  font-weight: 600;
+}
+
+.seconddiv button a {
+  text-decoration: none;
+  color: black;
+}
+
+.thirddiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 35px;
+}
+
+.thirddiv h1 {
+  color: black;
+  
+}
+
+.viewall a {
+  text-decoration: none;
+  color: black;
+}
+
+.viewall {
+  font-size: 15px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  margin: 30px;
+}
+
+.viewall:focus,
+.viewall:hover {
+  color: #000000;
+}
+
+.viewall:focus:after,
+.viewall:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.viewall:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #0c0c0c;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.thingslists ul {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.thingslists ul li{
+  display: inline;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.phonelist ul {
+  width: 900px;
+  margin-top: 20px;
+}
+
+.thingslists ul li:hover {
+  color: rgb(92, 91, 91);
+}
+
+.thingslists .listline {
+  position: absolute;
+  width: 0;
+  height: 1.5px;
+  background-color: black;
+  left: 50%;
+  bottom: -2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.thingslists .listfull {
+  width: 100%;
+  left: 0;
+}
+
+.thingsshow {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.appshow {
+  height: 80vh;
+}
+
+.thingsshow div {
+  min-width: 100%;
+  height: 100%;
+}
+
+.thingsshow .pfu{
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,auto);
+  gap: 25px;
+}
+
+.thingsshow .mb {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Two columns grid */
+  grid-gap: 16px;
+  
+}
+
+.thingsshow .tv {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Two columns grid */
+  grid-gap: 16px;
+}
+
+.thingsshow .happ {
+  background-color: rgb(208, 255, 0);
+}
+
+.thingsshow .cmp {
+  background-color: rgb(21, 0, 255);
+}
+
+.pfu div , .mobilediv{
+  width: 80%;
+  height: 100%;
+  background-color: rgb(238, 237, 237);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.pfu div h2 {
+  font-size: 17px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: center; 
+  margin: 15px 0;
+}
+
+.pfu div img {
+  width: 200px;
+  height: 150px;
+  background: transparent;
+  transition: all 0.5s ease-in;
+}
+
+.pfu .price{
+  color: blue;
+  margin: 0;
+}
+
+.pfu p {
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+}
+
+.pfu .thingbuybtn,.mobiledivfirst .thingbuybtn,.mobiledivrest .thingbuybtn {
+  background-color: black;
+  color: white;
+  padding: 7px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: none;
+  font-weight: 400;
+}
+
+.thingbuybtn a {
+  color: white;
+}
+
+.alink {
+  color: black;
+}
+
+.alinkwhite {
+  color: rgb(255, 255, 255);
+}
+
+.mobilediv {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.mobiledivfirst {
+  grid-row: span 2; /* Make it span across two columns */
+  grid-column: span 2;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 70%;
+}
+
+.mobiledivrest {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(232, 232, 232);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.mobiledivrest img {
+  margin-bottom: 20px;
+}
+
+.galaxyshow div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.galaxyshow div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.learnmorediv4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 50px;
+  margin: 0;
+}
+
+.galaxyshow .buybtn4 {
+  padding: 7px 15px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifthdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.fifthdiv h1 {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.elediv {
+  width: 30%;
+  display: flex;
+  top: 15%;
+}
+
+.elediv ul li {
+  margin: 0;
+  font-size: 18px;
+  color: rgb(3, 3, 3);
+}
+
+.elediv .thingslists .listline{
+  background-color: rgb(3, 3, 3);
+}
+
+.eleshow{
+  color: white;
+  height: 80vh;
+}
+
+.eleshow .buybtn4 {
+  background-color: white;
+  color: black;
+}
+
+.sisthdiv {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.sisthdiv .titile {
+  margin-bottom: 30px;
+}
+
+.applili {
+  left: 25%;
+  top: 10%;
+}
+
+.appshow h1 {
+  margin-top: 100%;
+}
+
+.seventhdiv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.seventhdiv .two7div {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.seventhdiv .two7div img {
+  border-radius: 25px;
+}
+
+.seventhdiv .two7div .youradsonhover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.youradsonhover .adshoverline {
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.youradsonhover .oneads7 {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.oneads7 span {
+  margin-right: 30px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.oneads7 .viewall {
+  margin-left: 70px;
+  font-size: 12px;
+  transition: display 0.5s ease-in-out;
+}
+
+.oneads7 .viewall:after {
+  height: 1px;
+}
+
+.youradsonhover hr {
+  background-color: #000000;
+  color: black;
+  height: 1px;
+  width: 90%;
+  margin-left: 70px;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid rgb(180, 180, 180);
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+.footer ul {
+  list-style: none;
+  display: inline;
+}
+
+.footer ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.footer ul li:nth-child(1) {
+  font-weight: 600;
+  border-right: 2px solid gray;
+  padding-right: 20px;
+  height: 5px;
+}
+
+.footer ul li:nth-child(8) {
+  margin-left: 200px;
+  font-size: 12px;
+}
+
+.footer ul i {
+  margin-left: 20px;
+  font-size: 23px;
+  color: black;
+  fill: black;
+}
+
+.menuhover {
+  position: absolute;
+  width: 83%;
+  height: 0px;
+  background-color: rgb(237, 237, 237);
+  top: 0;
+  left: 3rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: black;
+  display: none;
+  justify-content: center;
+  padding: 20px;
+  transition: height 7s ease-in-out;
+  overflow: hidden;
+  border-top: 1px solid gray;
+}
+
+.menuhoverdiv {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 17px;
+  transition: all 3s ease-in-out;
+}
+
+.menuhoverdiv h6 {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0;
+  margin-right: 0;
+}
+
+.menuhoverdiv ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+}
+
+.menuhoverdiv ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menuhoverdiv ul li:hover {
+  font-weight: 500;
+}
+
+.menuhover .aidatadiv {
+  color: rgb(90, 90, 90);
+  cursor: pointer;
+}
+
+.menuhover .aidatadiv:hover {
+  color: rgb(10, 10, 10);
+  font-weight: 450;
+}
